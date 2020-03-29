@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb4cb661-6f14-4738-a1b4-223c72642d67" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/golang/2019-05-28-hola.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/golang/2019-05-29-hello-world.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/golang/2019-05-30-welcome.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1_Two_Sum.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../21_Merge_Two_Sorted_lists.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2_Reverse_Integer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Remove_Duplicates_from_Sorted_Array.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +55,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1585448643995</updated>
-      <workItem from="1585448646115" duration="944000" />
+      <workItem from="1585448646115" duration="1303000" />
     </task>
     <servers />
   </component>

@@ -1,0 +1,101 @@
+{
+  "/code-life/": {
+    "component": "c4f5d8e4"
+  },
+  "/code-life/blog": {
+    "component": "a6aa9e1f",
+    "items": [
+      {
+        "content": "af172acd"
+      },
+      {
+        "content": "3570154c"
+      },
+      {
+        "content": "8e9f0a8a"
+      }
+    ],
+    "metadata": "b4798b09"
+  },
+  "/code-life/blog/hello-world": {
+    "component": "ccc49370",
+    "content": "d610846f"
+  },
+  "/code-life/blog/hola": {
+    "component": "ccc49370",
+    "content": "bdd709f1"
+  },
+  "/code-life/blog/tags": {
+    "component": "01a85c17",
+    "tags": "7fba56a2"
+  },
+  "/code-life/blog/tags/docusaurus": {
+    "component": "6875c492",
+    "items": [
+      {
+        "content": "af172acd"
+      },
+      {
+        "content": "3570154c"
+      },
+      {
+        "content": "8e9f0a8a"
+      }
+    ],
+    "metadata": "b05f966a"
+  },
+  "/code-life/blog/tags/facebook": {
+    "component": "6875c492",
+    "items": [
+      {
+        "content": "af172acd"
+      }
+    ],
+    "metadata": "a380aada"
+  },
+  "/code-life/blog/tags/hello": {
+    "component": "6875c492",
+    "items": [
+      {
+        "content": "af172acd"
+      },
+      {
+        "content": "3570154c"
+      }
+    ],
+    "metadata": "c5c11371"
+  },
+  "/code-life/blog/tags/hola": {
+    "component": "6875c492",
+    "items": [
+      {
+        "content": "8e9f0a8a"
+      }
+    ],
+    "metadata": "4225fd73"
+  },
+  "/code-life/blog/welcome": {
+    "component": "ccc49370",
+    "content": "2868cdab"
+  },
+  "/code-life/docs/:route": {
+    "component": "1be78505",
+    "docsMetadata": "481a40b4"
+  },
+  "/code-life/docs/doc1": {
+    "component": "17896441",
+    "content": "b2f90839"
+  },
+  "/code-life/docs/doc2": {
+    "component": "17896441",
+    "content": "df361e2b"
+  },
+  "/code-life/docs/doc3": {
+    "component": "17896441",
+    "content": "616665f6"
+  },
+  "/code-life/docs/mdx": {
+    "component": "17896441",
+    "content": "ce3e42ad"
+  }
+}
