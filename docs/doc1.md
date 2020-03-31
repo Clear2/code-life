@@ -6,6 +6,21 @@ sidebar_label: Style Guide
 
 You can write content using [GitHub-flavored Markdown syntax](https://github.github.com/gfm/).
 
+### create git page
+
+- 把build目录设置为根目录
+
+``` 
+git add build 
+
+git commit -m 'init subtree build commit'
+
+git subtree push --prefix build origin gh-pages
+```
+
+- 把GitHub Pages source 设置为 gh-pages branch
+
+
 ## Markdown Syntax
 
 To serve as an example page when styling markdown based Docusaurus sites.

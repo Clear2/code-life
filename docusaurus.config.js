@@ -8,7 +8,7 @@ module.exports = {
   projectName: 'code-life', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'My Site',
+      title: 'Fe',
       logo: {
         alt: 'My Site Logo',
         src: 'img/logo.svg',
@@ -54,7 +54,7 @@ module.exports = {
           ],
         }
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc.`,
     },
   },
   presets: [

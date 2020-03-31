@@ -1,14 +1,37 @@
 ---
-id: doc3
-title: This is Document Number 3
+id: prototype
+title: 面向对象与原型
+
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac euismod odio, eu consequat dui. Nullam molestie consectetur risus id imperdiet. Proin sodales ornare turpis, non mollis massa ultricies id. Nam at nibh scelerisque, feugiat ante non, dapibus tortor. Vivamus volutpat diam quis tellus elementum bibendum. Praesent semper gravida velit quis aliquam. Etiam in cursus neque. Nam lectus ligula, malesuada et mauris a, bibendum faucibus mi. Phasellus ut interdum felis. Phasellus in odio pulvinar, porttitor urna eget, fringilla lectus. Aliquam sollicitudin est eros. Mauris consectetur quam vitae mauris interdum hendrerit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+### 创建对象的两种方式
+- new 
+- 字面量
 
-Duis et egestas libero, imperdiet faucibus ipsum. Sed posuere eget urna vel feugiat. Vivamus a arcu sagittis, fermentum urna dapibus, congue lectus. Fusce vulputate porttitor nisl, ac cursus elit volutpat vitae. Nullam vitae ipsum egestas, convallis quam non, porta nibh. Morbi gravida erat nec neque bibendum, eu pellentesque velit posuere. Fusce aliquam erat eu massa eleifend tristique.
+``` javascript
+function Fn() {
 
-Sed consequat sollicitudin ipsum eget tempus. Integer a aliquet velit. In justo nibh, pellentesque non suscipit eget, gravida vel lacus. Donec odio ante, malesuada in massa quis, pharetra tristique ligula. Donec eros est, tristique eget finibus quis, semper non nisl. Vivamus et elit nec enim ornare placerat. Sed posuere odio a elit cursus sagittis.
+}
 
-Phasellus feugiat purus eu tortor ultrices finibus. Ut libero nibh, lobortis et libero nec, dapibus posuere eros. Sed sagittis euismod justo at consectetur. Nulla finibus libero placerat, cursus sapien at, eleifend ligula. Vivamus elit nisl, hendrerit ac nibh eu, ultrices tempus dui. Nam tellus neque, commodo non rhoncus eu, gravida in risus. Nullam id iaculis tortor.
+let f1 = new Fn() // Fn用new执行，
+let f2 = new Fn()
+```
 
-Nullam at odio in sem varius tempor sit amet vel lorem. Etiam eu hendrerit nisl. Fusce nibh mauris, vulputate sit amet ex vitae, congue rhoncus nisl. Sed eget tellus purus. Nullam tempus commodo erat ut tristique. Cras accumsan massa sit amet justo consequat eleifend. Integer scelerisque vitae tellus id consectetur.
+
+### 原型与原型链模式
+- 每一个函数数据类型都有一个自带的属性: `prototype`, 这个属性值是一个对象(用来存储公用的属性和方法的)
+ 1. 普通的函数
+ 3. 类 (自定义类和内置类)
+ 
+- 在`prototype`这个对象中，有一个自带的属性`construct`, 这个属性存储的是当前函数本身
+
+- 每一个对象类型的数据类型的值，有一个自带的属性 `__proto__`, 这个属性指向所属类的原型 `prototype`
+1. 普通对象 
+2. 数组、正则、Math、日期、类数组等等
+3. 实例也是对象类型的值
+4. 函数的原型 prototype属性的值也是对象类型的
+5. 函数也是对象类型的值 
+
+```javascript
+Fn.prototype.constructor === Fn
+``` 
