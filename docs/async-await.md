@@ -3,6 +3,30 @@ id: await
 title: async/await
 sidebar_label: async/await
 ---
+### async的使用
+```javascript
+const x = {
+  getEnv(fn) {
+    fn(5)
+  }
+}
+
+async function asyncFn() {
+  return new Promise(resolve => {
+    x.getEnv((res) =>{
+      resolve(res)
+    })
+  })
+}
+
+async function asyncCall() {
+  const res = await asyncFn()
+  console.log('res->', e)
+}
+
+asyncCall()
+```
+
 
 ### async/await example
 1. 准备一个例子

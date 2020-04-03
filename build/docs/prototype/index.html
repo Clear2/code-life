@@ -16,25 +16,25 @@
 <link rel="stylesheet" href="/code-life/styles.e3265f49.css">
 
 
-<link rel="preload" href="/code-life/styles.fd205672.js" as="script">
+<link rel="preload" href="/code-life/styles.cc591217.js" as="script">
 
-<link rel="preload" href="/code-life/runtime~main.c047269f.js" as="script">
+<link rel="preload" href="/code-life/runtime~main.abab069b.js" as="script">
 
-<link rel="preload" href="/code-life/main.04117200.js" as="script">
+<link rel="preload" href="/code-life/main.b9d4bec7.js" as="script">
 
-<link rel="preload" href="/code-life/1.e70a11ae.js" as="script">
+<link rel="preload" href="/code-life/1.aa8cdbe0.js" as="script">
 
-<link rel="preload" href="/code-life/2.ed6b8810.js" as="script">
+<link rel="preload" href="/code-life/2.db2b32be.js" as="script">
 
-<link rel="preload" href="/code-life/3.0b2cbec0.js" as="script">
+<link rel="preload" href="/code-life/3.d8a11365.js" as="script">
 
-<link rel="preload" href="/code-life/1be78505.19200ad2.js" as="script">
+<link rel="preload" href="/code-life/1be78505.fd4ab377.js" as="script">
 
-<link rel="preload" href="/code-life/481a40b4.ec02b99e.js" as="script">
+<link rel="preload" href="/code-life/481a40b4.9caa40e6.js" as="script">
 
-<link rel="preload" href="/code-life/17896441.9ae08d5b.js" as="script">
+<link rel="preload" href="/code-life/17896441.773fd973.js" as="script">
 
-<link rel="preload" href="/code-life/bf719b17.1b6d5f1e.js" as="script">
+<link rel="preload" href="/code-life/bf719b17.aa130759.js" as="script">
 
 </head>
 <body>
@@ -45,25 +45,25 @@
 </span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain"></span><span class="token keyword" style="font-style:italic">let</span><span class="token plain"> f1 </span><span class="token operator" style="color:rgb(137, 221, 255)">=</span><span class="token plain"> </span><span class="token keyword" style="font-style:italic">new</span><span class="token plain"> </span><span class="token class-name" style="color:rgb(255, 203, 107)">Fn</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain"> </span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic">// Fn用new执行，</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain"></span><span class="token keyword" style="font-style:italic">let</span><span class="token plain"> f2 </span><span class="token operator" style="color:rgb(137, 221, 255)">=</span><span class="token plain"> </span><span class="token keyword" style="font-style:italic">new</span><span class="token plain"> </span><span class="token class-name" style="color:rgb(255, 203, 107)">Fn</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span></div></code></pre></div><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="原型与原型链模式"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#原型与原型链模式" title="Direct link to heading">#</a>原型与原型链模式</h3><ul><li>每一个函数数据类型都有一个自带的属性: <code>prototype</code>, 这个属性值是一个对象(用来存储公用的属性和方法的)</li></ul><ol><li>普通的函数</li><li>类 (自定义类和内置类)</li></ol><ul><li><p>在<code>prototype</code>这个对象中，有一个自带的属性<code>construct</code>, 这个属性存储的是当前函数本身</p></li><li><p>每一个对象类型的数据类型的值，有一个自带的属性 <code>__proto__</code>, 这个属性指向所属类的原型 <code>prototype</code></p></li></ul><ol><li>普通对象 </li><li>数组、正则、Math、日期、类数组等等</li><li>实例也是对象类型的值</li><li>函数的原型 prototype属性的值也是对象类型的</li><li>函数也是对象类型的值 </li></ol><div class="mdxCodeBlock_iHAB"><pre class="prism-code language-javascript codeBlock_19pQ"><button type="button" aria-label="Copy code to clipboard" class="copyButton_1BYj">Copy</button><code class="codeBlockLines_2n9r" style="color:#bfc7d5;background-color:#292d3e"><div class="token-line" style="color:#bfc7d5"><span class="token class-name" style="color:rgb(255, 203, 107)">Fn</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token property-access">prototype</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token property-access">constructor</span><span class="token plain"> </span><span class="token operator" style="color:rgb(137, 221, 255)">===</span><span class="token plain"> </span><span class="token maybe-class-name">Fn</span></div></code></pre></div></div></article><div class="margin-vert--xl"><div class="row"><div class="col"><a href="https://github.com/facebook/docusaurus/edit/master/website/docs/prototype.md" target="_blank" rel="noreferrer noopener"><svg fill="currentColor" height="1.2em" width="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 40 40" style="margin-right:0.3em;vertical-align:sub"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div></div></div><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/code-life/docs/await"><h5 class="pagination-nav__link--sublabel">Previous</h5><h4 class="pagination-nav__link--label">« async/await</h4></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/code-life/docs/flex"><h5 class="pagination-nav__link--sublabel">Next</h5><h4 class="pagination-nav__link--label">Flex 布局 »</h4></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_TbNY"><ul class="contents contents__left-border"><li><a href="#创建对象的两种方式" class="contents__link">创建对象的两种方式</a></li><li><a href="#原型与原型链模式" class="contents__link">原型与原型链模式</a></li></ul></div></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="row footer__links"><div class="col footer__col"><h4 class="footer__title">Docs</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" href="/code-life/docs/doc1">Style Guide</a></li><li class="footer__item"><a class="footer__link-item" href="/code-life/docs/doc2">Second Doc</a></li></ul></div></div><div class="text--center"><div>Copyright © 2020 My Project, Inc.</div></div></div></footer>
 </div>
 
-<script src="/code-life/styles.fd205672.js"></script>
+<script src="/code-life/styles.cc591217.js"></script>
 
-<script src="/code-life/runtime~main.c047269f.js"></script>
+<script src="/code-life/runtime~main.abab069b.js"></script>
 
-<script src="/code-life/main.04117200.js"></script>
+<script src="/code-life/main.b9d4bec7.js"></script>
 
-<script src="/code-life/1.e70a11ae.js"></script>
+<script src="/code-life/1.aa8cdbe0.js"></script>
 
-<script src="/code-life/2.ed6b8810.js"></script>
+<script src="/code-life/2.db2b32be.js"></script>
 
-<script src="/code-life/3.0b2cbec0.js"></script>
+<script src="/code-life/3.d8a11365.js"></script>
 
-<script src="/code-life/1be78505.19200ad2.js"></script>
+<script src="/code-life/1be78505.fd4ab377.js"></script>
 
-<script src="/code-life/481a40b4.ec02b99e.js"></script>
+<script src="/code-life/481a40b4.9caa40e6.js"></script>
 
-<script src="/code-life/17896441.9ae08d5b.js"></script>
+<script src="/code-life/17896441.773fd973.js"></script>
 
-<script src="/code-life/bf719b17.1b6d5f1e.js"></script>
+<script src="/code-life/bf719b17.aa130759.js"></script>
 
 
 </body>

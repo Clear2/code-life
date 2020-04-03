@@ -2,8 +2,9 @@
 
 module.exports = {
     someSidebar: {
-        Docusaurus: ['doc1', 'await'],
+        FE: ['doc1', 'await', 'prototype'],
         CSS: ['flex'],
+        Hybird: ['hybird'],
         Features: ['mdx'],
     },
 };

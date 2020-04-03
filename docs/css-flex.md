@@ -2,17 +2,16 @@
 id: flex
 title: Flex 布局
 sidebar_label: Flex 布局
-
 ---
 
-#### Flex的方向: 主轴与辅轴
+### Flex的方向: 主轴与辅轴
 - 沿主轴的叫做排布(justification)
 - 沿辅助的叫做对齐(alignment)
 
  指定个别项的外边距 margin-right: auto, 外边距就会扩展占据可用空间
 
 
-#### 可伸缩尺寸
+### 可伸缩尺寸
 - 控制项目在主轴方向上的大小(width, height)
 flex-basis: auto , 可以是长度值(18em), 百分比(相对于容器的主轴而言)
 
@@ -41,7 +40,22 @@ flex-shrink: 1 与flex-grow类似，作用相反，如果空间不够，该项�
 
 分别设置不同的flex-grow
 ```css
-.short { flex-grow: 1 }
+.short { flex-grow: 3 }
 
-.long { flex-grow: 3 }
+.long { flex-grow: 1 }
 ```
+第一项分的3/4， 第二项分的1/4，结果就是两项各站500px的宽度
+
+
+#### 纯粹按伸缩系数来计算
+因为flex-basis的默认值是auto, 而且也没有给项目设定明确的宽度,假如第一步中flex-basic的值是0, 
+那么这一步就不会给项目分配空间了，这种情况下，容器内部的全部空间都会留到第二步再分配，就是根据伸缩系数切分，然后将最终尺寸指定给具体的项目
+
+flex 这个简写值可以一次性设置 flex-grow flex-shrink flex-basis属性
+```css
+.nav li { 
+    flex: 1 0 0%
+}
+```
+最后一个flex-basic值加了百分号，这是因为简写中flex-basic必须带单位，因此这里要么加百分比，要么就写成0px
+
